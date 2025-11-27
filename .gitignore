@@ -1,0 +1,39 @@
+# Node dependencies
+node_modules/
+
+# Environment files (keep secrets out of repository)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# SASS cache and compiled CSS (main.css is generated from SCSS)
+.sass-cache/
+styles/main.css
+
+# Build output
+dist/
+build/
+coverage/
+
+# IDE / editor folders
+.vscode/
+.idea/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+.cache/
+.parcel-cache/
+.vercel/
+.netlify/
