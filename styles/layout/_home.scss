@@ -1,0 +1,54 @@
+body {
+  @include flex-col;
+  height: 100vh;
+}
+section {
+  max-width: 430px;
+  width: 90vw;
+  height: 270px;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  @media only screen and (max-width: 400px) {
+    padding: 25px;
+  }
+
+  .advice {
+    @include flex-col;
+    &-vector {
+      margin-top: 20px;
+    }
+    &-dice {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 55%);
+      @media only screen and (max-width: 400px) {
+        bottom: 0px;
+      }
+      &-img {
+        position: absolute;
+      }
+      &-button {
+        position: relative;
+        @include flex-row;
+        background-color: $advice-id;
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px $advice-id;
+        transition: box-shadow 0.3s ease;
+        position: relative;
+        &:hover {
+          box-shadow: 0px 0px 30px $advice-id;
+        }
+        @media only screen and (max-width: 400px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

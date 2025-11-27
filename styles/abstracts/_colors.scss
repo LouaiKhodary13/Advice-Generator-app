@@ -1,0 +1,15 @@
+body {
+  background-color: $body-bg;
+}
+section {
+  background-color: $advice-bg;
+
+  .advice {
+    &-heading {
+      color: $advice-id;
+    }
+    &-text {
+      color: $advice-text;
+    }
+  }
+}
